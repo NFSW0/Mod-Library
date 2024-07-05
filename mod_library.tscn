@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=3 uid="uid://cinnh0rqo2k5i"]
+
+[ext_resource type="Script" path="res://mod_library.gd" id="1_22hki"]
+
+[node name="ModLibrary" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_22hki")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Mod Library"
+horizontal_alignment = 1
+
+[node name="Buff" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Buff System"
+
+[node name="Item" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Item System"
+
+[node name="UsabelItem" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Usable Item System"
+
+[node name="Craft" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Craft System"
+
+[node name="Achievement" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Achievement"
+
+[node name="Archive" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Archive"
+
+[node name="Combat" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Combat"
+
+[node name="Ui" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Ui"
+
+[connection signal="pressed" from="VBoxContainer/Buff" to="." method="_on_buff_pressed"]
+[connection signal="pressed" from="VBoxContainer/Item" to="." method="_on_item_pressed"]
+[connection signal="pressed" from="VBoxContainer/UsabelItem" to="." method="_on_usabel_item_pressed"]
+[connection signal="pressed" from="VBoxContainer/Craft" to="." method="_on_craft_pressed"]
+[connection signal="pressed" from="VBoxContainer/Achievement" to="." method="_on_achievement_pressed"]
+[connection signal="pressed" from="VBoxContainer/Archive" to="." method="_on_archive_pressed"]
+[connection signal="pressed" from="VBoxContainer/Combat" to="." method="_on_combat_pressed"]
+[connection signal="pressed" from="VBoxContainer/Ui" to="." method="_on_ui_pressed"]

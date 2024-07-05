@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="BuffData" load_steps=6 format=3 uid="uid://c0n1a7qkauitk"]
+
+[ext_resource type="Script" path="res://mods/buff system/script/buff_data.gd" id="1_tpylm"]
+[ext_resource type="Script" path="res://mods/buff system/script/buff_effect.gd" id="1_xylx8"]
+[ext_resource type="Texture2D" uid="uid://c5tk65snpx8td" path="res://mods/buff system/assets/example_buff_icon.png" id="2_o6tfd"]
+
+[sub_resource type="Resource" id="Resource_ryldf"]
+script = ExtResource("1_xylx8")
+
+[sub_resource type="Resource" id="Resource_gbjv4"]
+script = ExtResource("1_xylx8")
+
+[resource]
+script = ExtResource("1_tpylm")
+buff_id = 0
+buff_name = "调试1"
+buff_icon = ExtResource("2_o6tfd")
+buff_tags = Array[String]([])
+buff_max_stack = 5
+buff_description = "测试用"
+buff_max_duration = 5.0
+buff_tick_interval = 0.0
+buff_effect_on_append = Array[ExtResource("1_xylx8")]([SubResource("Resource_ryldf")])
+buff_effect_on_tick = Array[ExtResource("1_xylx8")]([])
+buff_effect_on_erase = Array[ExtResource("1_xylx8")]([SubResource("Resource_gbjv4")])

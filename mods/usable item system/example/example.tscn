@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://o7plrm81pcfu"]
+
+[ext_resource type="Script" path="res://mods/usable item system/example/example.gd" id="1_fxtsq"]
+
+[node name="Example" type="Node"]
+script = ExtResource("1_fxtsq")
+
+[node name="Node1" type="Node" parent="."]
+
+[node name="Node2" type="Node" parent="."]

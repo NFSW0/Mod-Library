@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq0phasveh08"]
+
+[ext_resource type="Script" path="res://mods/combat system/example/example.gd" id="1_cdfew"]
+
+[node name="example" type="Node"]
+script = ExtResource("1_cdfew")
+
+[node name="Node1" type="Node" parent="."]
+
+[node name="Node2" type="Node" parent="."]

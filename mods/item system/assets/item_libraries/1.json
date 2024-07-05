@@ -1,0 +1,22 @@
+{
+  "-4": {
+    "name": "wood boat",
+    "description": "water vehicle",
+    "icon": "/boat.png"
+  },
+  "-3": {
+    "name": "iron sword",
+    "description": "melee weapon",
+    "icon": "/iron_sword.png"
+  },
+  "-2": {
+    "name": "iron ingot",
+    "description": "condition",
+    "icon": "/iron_ingot.png"
+  },
+  "-1": {
+    "name": "wood",
+    "description": "condition",
+    "icon": "/wood.png"
+  }
+}

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt5yp3npws8bq"]
+
+[ext_resource type="Script" path="res://mods/craft system/example/example.gd" id="1_lb6m1"]
+
+[node name="Example" type="Node"]
+script = ExtResource("1_lb6m1")

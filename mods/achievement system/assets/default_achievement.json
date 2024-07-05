@@ -1,0 +1,10 @@
+{
+  "first_kill": {
+	"unlocked": false,
+	"description": "第一次击杀"
+  },
+  "first_die": {
+	"unlocked": false,
+	"description": "第一次死亡"
+  }
+}

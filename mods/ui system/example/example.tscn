@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://uqgtbad44gpu"]
+
+[ext_resource type="Script" path="res://mods/ui system/example/example.gd" id="1_y0ib2"]
+
+[node name="example" type="Node"]
+script = ExtResource("1_y0ib2")

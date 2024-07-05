@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxjwebia5s8fl"]
+
+[ext_resource type="Script" path="res://mods/droppable item system/scripts/drop_item.gd" id="1_e8yv1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7g0mr"]
+
+[node name="drop_item" type="Node"]
+script = ExtResource("1_e8yv1")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CircleShape2D_7g0mr")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]

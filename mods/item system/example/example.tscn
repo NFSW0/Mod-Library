@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://chylhxdadxx5m"]
+
+[ext_resource type="Script" path="res://mods/item system/script/item_store.gd" id="1_7c51t"]
+[ext_resource type="PackedScene" uid="uid://26i3tm4jvups" path="res://mods/item system/example/box_ui.tscn" id="1_srhyo"]
+[ext_resource type="Script" path="res://mods/item system/example/example.gd" id="1_wqr67"]
+
+[node name="example" type="Node" node_paths=PackedStringArray("store1", "store2", "store3")]
+script = ExtResource("1_wqr67")
+store1 = NodePath("Box")
+store2 = NodePath("Box2")
+store3 = NodePath("Box3")
+
+[node name="ui" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ui"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ui" parent="ui/HBoxContainer" node_paths=PackedStringArray("box_store") instance=ExtResource("1_srhyo")]
+layout_mode = 2
+size_flags_horizontal = 3
+box_store = NodePath("../../../Box")
+
+[node name="ui2" parent="ui/HBoxContainer" node_paths=PackedStringArray("box_store") instance=ExtResource("1_srhyo")]
+layout_mode = 2
+size_flags_horizontal = 3
+box_store = NodePath("../../../Box2")
+
+[node name="ui3" parent="ui/HBoxContainer" node_paths=PackedStringArray("box_store") instance=ExtResource("1_srhyo")]
+layout_mode = 2
+size_flags_horizontal = 3
+box_store = NodePath("../../../Box3")
+
+[node name="Box" type="Node" parent="."]
+script = ExtResource("1_7c51t")
+
+[node name="Box2" type="Node" parent="."]
+script = ExtResource("1_7c51t")
+
+[node name="Box3" type="Node" parent="."]
+script = ExtResource("1_7c51t")
